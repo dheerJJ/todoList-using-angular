@@ -10,9 +10,9 @@ CREATE TABLE IF NOT EXISTS todos (
 const initializeDatabase = async () => {
   try {
     await db.query(createTableQuery);
-    console.log('✅ "todos" table verified/created successfully.');
+    console.log('"todos" table verified/created successfully.');
   } catch (error) {
-    console.error("❌ Error initializing database:", error.message);
+    console.error("Error initializing database:", error.message);
   }
 };
 
